@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body {
+            background-size: 100px 100px;
+            background-image: linear-gradient(to right, grey 1px, transparent 1px), linear-gradient(to bottom, grey 1px, transparent 1px);
+        }
+
+        #first {
+            background: aqua;
+        }
+
+        #second {
+            background: black;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .rect {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div id="first" class="rect"></div>
+    <div id="second" class="rect"></div>
+    <script type="application/javascript" src="./collision-detection.js"></script>
+</body>
+</html>
